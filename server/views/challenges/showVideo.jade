@@ -3,13 +3,13 @@ block content
     include ../partials/flyer
     .row
         .col-xs-12.col-sm-12.col-md-4
-            h4.text-center.challenge-instructions-title= name
+            h4.text-center.challenge-instructions-title= titleEs
                 if (isCompleted)
                     | &nbsp;
                     i.ion-checkmark-circled.text-primary(title="Completed")
             hr
             ol
-                for step, index in description
+                for step, index in descriptionEs
                     .row.checklist-element(id="#{dashedName + index}")
                         .col-xs-2.col-sm-1.col-md-2.padded-ionic-icon.text-right
                             input(type='checkbox' class='challenge-list-checkbox')

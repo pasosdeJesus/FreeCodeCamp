@@ -34,12 +34,12 @@ block content
                                   if challenge.completed
                                       p.challenge-title.faded.text-primary.ion-checkmark-circled.padded-ionic-icon.negative-15(name="#{challenge.dashedName}")
                                           a(href="#{challenge.url}" target='_parent')
-                                              = challenge.title
+                                              = challenge.titleEs
                                               span.sr-only= " Complete"
                                   else if challenge.isRequired
                                       p.challenge-title.ion-ios-circle-outline.padded-ionic-icon.negative-15(name="#{challenge.dashedName}")
                                           a(name="#{challenge.dashedName}" target='_parent' href="#{challenge.url}" class=challenge.isComingSoon ? 'disabled' : '')
-                                              span= challenge.title
+                                              span= challenge.titleEs
                                               span.sr-only= " Incomplete"
                                           if challenge.markNew
                                               span.text-info.small &thinsp; &thinsp;
@@ -54,7 +54,7 @@ block content
                                   else
                                       p.challenge-title.ion-ios-circle-outline.padded-ionic-icon.negative-15(name="#{challenge.dashedName}")
                                           a(name="#{challenge.dashedName}" target='_parent' href="#{challenge.url}" class=challenge.isComingSoon ? 'disabled' : '')
-                                              span= challenge.title
+                                              span= challenge.titleEs
                                               span.sr-only= " Incomplete"
                                           if challenge.markNew
                                               span.text-info.small &thinsp; &thinsp;
