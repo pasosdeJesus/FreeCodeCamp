@@ -49,7 +49,7 @@
       "titleEs": "Declara objetos de JavaScript como variables",
       "descriptionEs": [
         "Antes de sumergirnos en Programación Orientada a Objetos, vamos a revisar los objetos de JavaScript.",
-        "Dale a tu objeto <code>motorBike</code> un atributo <code>wheels</code>, otro llamado <code>motors</code> y otro <code>seats</code> y asignales números."
+        "Dale a tu objeto <code>motorBike</code> un atributo <code>wheels</code>, otro llamado <code>engines</code> y otro <code>seats</code> y asignales números."
       ]
     },
     {
@@ -98,15 +98,15 @@
         "A cada función <code>constructora</code> se le da un nombre comenzando en mayúsculas para que quede claro que es una <code>constructora</code>.",
         "He aquí un ejemplo de una función <code>constructora</code>:",
         "<code>var Carro = function() {</code>",
-        "<code>& nbsp; & nbsp; this.llantas = 4; </code>",
-        "<code>& nbsp; & nbsp; this.motores = 1; </code>",
-        "<code>& nbsp; & nbsp; this.asientos = 1; </code>",
+        "<code>&nbsp;&nbsp;this.llantas = 4; </code>",
+        "<code>&nbsp;&nbsp;this.motores = 1; </code>",
+        "<code>&nbsp;&nbsp;this.asientos = 1; </code>",
         "<code>}; </code>",
         "En una <code>constructora</code> la variable <code>this</code> hace referencia al nuevo objeto que está siendo creado por la constructora. Así que cuando escribimos ",
         "<code>&nbsp;&nbsp;this.llantas = 4;</code>",
         "dentro de la <code>constructora</code> le estamos dando el nuevo objeto que se crea una propiedad llamada <code>llantas</code> con un valor de <code>4</code>.",
         "Puedes pensar en una <code>constructora</code> como una descripción del objeto que crea.",
-        "Haz que tu <code>constructora</code> <code>MotorBike</code> describa un objeto con las propiedades <code>wheels</code>,<code>engines</code> and <code>seats</code> y asignales números."
+        "Haz que tu <code>constructora</code> <code>MotorBike</code> describa un objeto con las propiedades <code>wheels</code>,<code>engines</code> y <code>seats</code> y asignales números."
       ]
     },
     {
