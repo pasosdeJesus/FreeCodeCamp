@@ -982,7 +982,7 @@
         "En JavaScript, tu puedes <dfn>escapar</dfn> unas comillas para diferenciarlas de las comillas del final de la cadena colocando una <dfn>barra invertida</dfn> (<code>\\</code>) antes de la cita.",
         "<code>var cadenaEjem = \"Alan dijo, \\\"Pedro está aprendiendo JavaScript\\\".\";</code>",
         "Esto le indica a JavaScript que la comilla siguiente no es el fin de la cadena, sino que debe aparecer dentro de la cadena. Así que si fueras a imprimir esto en la consola, tu obtendrías:",
-        "<code>Alan dijo, \"Pedro está aprendiendo JavaScript\".<code>",
+        "<code>Alan dijo, \"Pedro está aprendiendo JavaScript\".</code>",
         "<h4>Instructiones</h4>",
         "Usa <dfn>barras invertidas</dfn>para asigar una cadena a la variable <code>myStr</code> de modo que <em>si</em> tu fueras a imprimirla en la consola, tu verías:",
         "<code>I am a \"double quoted\" string inside \"double quotes\"</code>"
@@ -2098,7 +2098,7 @@
         "<code>& nbsp; & nbsp; return a + b;</code>",
         "<code>}</code>",
         "Después de escribir las líneas anteriores en nuestro código, podemos pasar valores a nuestra función y el resultado que sigue a la instrucción <code>return</code> será retornado.",
-        "Por ejemplo, podemos pasar los números <code>4</code> y <code>2</code> al \"llamar\" la función más adelante en nuestro código, así: <code>nombreDeFuncion(4, 2)</ code >. ",
+        "Por ejemplo, podemos pasar los números <code>4</code> y <code>2</code> al \"llamar\" la función más adelante en nuestro código, así: <code>nombreDeFuncion(4, 2)</code >. ",
         "En este ejemplo, la función devolverá el número <code>6</code>, ya que es el resultado de <code>4 + 2</code>.",
         "Crea y llama una función de nombre <code>myFunction</code> que devuelva la suma de <code>a</code> y <code>b</code>."
       ]
@@ -2548,7 +2548,7 @@
       "titleEs": "Hacer cola",
       "descriptionEs": [
         "En Ciencias de la Computación una <dfn>cola</dfn> es una <dfn>Estructura de Datos</dfn> abstracta donde los elementos son mantenidos en orden. Nuevos elementos pueden ser agregados en la parte trasera de la <code>cola</code> y los elementos viejos son quitados desde el frente de la <code>cola</code>.",
-        "Escribe una función <code>nextInLine</code> la cual toma un vector (<code>arr</code>) y un número (<code>item</code>) como argumentos. Agrega el número al final del vector, entonces retira el primer elemento del vector. La función nextInLine debe entonces devolver el elemento que se ha eliminado."
+        "Escribe una función <code>nextInLine</code> la cual toma un vector (<code>arr</code>) y un número (<code>item</code>) como argumentos. Agrega el número al final del vector y después retira el primer elemento del vector. La función nextInLine entonces devolver el elemento que se ha eliminado."
       ]
     },
     {
@@ -2641,17 +2641,15 @@
       "challengeType": 1,
       "titleEs": "Usa lógica condicional con instrucciones if y else",
       "descriptionEs": [
-        "Podemos usar instrucciones <code>if</code> (\"if\" es \"si\" en español) en JavaScript para ejecutar código sólo cuando cierta condición se cumpla.",
-        "Las instrucciones <code>if</code> requieren evaluar algún tipo de condición booleana.",
-        "Por ejemplo:",
-        "<code>if (1 === 2) {</code>",
-        "<code>&nbsp;&nbsp;return true;</code>",
-        "<code>} else {</code>",
-        "<code>&nbsp;&nbsp;return false;</code>",
-        "<code>}</code>",
-        "Vamos a usar la instrucción <code>if</code> con <code>else</code> (\"else\" puede traducirse como \"de lo contrario\") para hacer un juego de cara o sello.",
+        "Las instrucciones <code>if</code> se usan para hacer decisiones en el código (\"if\" es \"si\" en español). La palabra reservada <code>if</code> le dice a JavaScript que ejecute el código que está en el bloque entre llaves sólo bajo ciertas condiciones, definidas entre paréntesis. Estas condiciones se conocen como condiciones <em>Booleanas</code> porque sólo pueden evaluarse a verdadero (<code>true</code>) o falso (<code>false</code>).",
+	"Cuando la condición evalua a <code>true</code>, el programa ejecuta las instrucciones del bloque entre llaves.  Cuando la condición booleana evalua a <code>false</code>, no se ejecutará el bloque de instrucciones que están entre llaves.",
+        "<strong>Seudocódigo</strong>",
+        "<blockquote>if (<i>condición es verdadera</i>) {<br>  <i>instrucciones que se ejecutan</i><br>}</blockquote>",
+        "<strong>Ejemplo</strong>",
+        "<blockquote>function prueba(miCondicion) {<br>  if (miCondicion) {<br>     return \"Era verdadera\";<br>  }<br>  return \"Era falsa\";<br>}<br>prueba(true);  // retorna \"Era verdadera\"<br>prueba(false); // retorna \"Era falsa\"</blockquote>",
+        "Cuando <code>prueba</code> es llamada con un valor <code>true</code>, la instrucción <code>if</code> evalua <code>miCondicion</code> para determinar si es verdadera o no. Como es verdadera, la función retorna <code>\"Era verdadera\"</code>. Cuando llamamamos <code>test</code> con un valor <code>false</code>, <code>myCondicion</code>  <em>no</em> es <code>true</code> y la instrucción entre llaves no se ejecuta así que la función retorna <code>\"Era falsa\"</code>.",
         "<h4>Instrucciones</h4>",
-        "Crea una instrucción <code>if</code> con <code>else</code> que retorne la cadena <code>\"heads\"</code> si la variable <code>flip</code> es cero, o bien que retorne <code >\"tails\"</code> si la variable <code>flip</code> no es cero. "
+        "Cree una instrucción <code>if</code> dentro de la función que retorne <code>\"Yes, that was true\"</code> si el parámetro <code>wasThatTrue</code> es <code>true</code> y que retorne <code>\"No, that was false\"</code> en otro caso."
       ]
     },
     {
@@ -3797,7 +3795,7 @@
         "En el juego de casino Blackjack, un jugador puede conseguir ventaja sobre la casa manteniendo un registro del número relativo de cartas altas y bajas restantes en la baraja. Esto es llamado <a href='https://en.wikipedia.org/wiki/Card_counting' target='_blank'>Conteo de Cartas</a>.",
         "Tener más cartas altas restantes en la baraja favorece al jugador. A cada carta se le asigna un valor de acuerdo a la tabla de abajo. Cuando el conteo es positivo, el jugador debe apostar alto. Cuando el conteo es cero o negativo, el jugador debe apostar bajo.",
         "<table class=\"table table-striped\"><thead><tr><th>Valor</th><th>Cartas</th></tr></thead><tbody><tr><td>+1</td><td>2, 3, 4, 5, 6</td></tr><tr><td>0</td><td>7, 8, 9</td></tr><tr><td>-1</td><td>10, 'J', 'Q', 'K','A'</td></tr></tbody></table>",
-        "Vas a escribir una función de conteo de cartas. Esta recibirá un parametro <code>card</code> (carta) e incrementa o decrementa la variable <code>count</code> (conteo) global de acuerdo al valor de la carta (ver tabla). La función retornará entonces una cadena con el presente conteo y la cadena <code>\"Bet\"</code> si el conteo es positivo o <code>\"Hold\"</code> si el conteo es cero o negativo. El presente conteo y la desición del jugador (<code>\"Bet\"</code> o <code>\"Hold\"</code>) deben quedar separada por un único espacio.",
+        "Vas a escribir una función de conteo de cartas. Esta recibirá un parametro <code>card</code> (carta) e incrementa o decrementa la variable global <code>count</code> (conteo) de acuerdo al valor de la carta (ver tabla). La función retornará entonces una cadena con el presente conteo y la cadena <code>\"Bet\"</code> si el conteo es positivo o <code>\"Hold\"</code> si el conteo es cero o negativo. El presente conteo y la desición del jugador (<code>\"Bet\"</code> o <code>\"Hold\"</code>) deben quedar separada por un único espacio.",
         "<strong>Ejemplo de Salida</strong><br><code>\"-3 Hold\"<br>\"5 Bet\"</code>"
       ]
     },
@@ -5117,7 +5115,7 @@
         "<code>Math.floor(Math.random() * (max - min + 1)) + min</code>",
         "Definir dos variables: <code>myMin</code> y <code>myMax</code>, y asignales valores enteros.",
         "<h4>Instrucciones</h4>",
-        "A continuación, crea una función llamada <code>myFunction</code> que devuelva un número aleatorio mayor o igual a <code>myMin</code>, y menor o igual a <code>myMax</code>. "
+        "A continuación, crea una función llamada <code>randomRange</code> que devuelva un número aleatorio mayor o igual a <code>myMin</code>, y menor o igual a <code>myMax</code>. "
       ]
     },
     {

@@ -536,15 +536,18 @@ module.exports = function(app) {
 
   function completedChallenge(req, res, next) {
     req.checkBody('id', 'id must be an ObjectId').isMongoId();
-    req.checkBody('name', 'name must be at least 3 characters')
-      .isString()
-      .isLength({ min: 3 });
+    //req.checkBody('name', 'name must be at least 3 characters')
+    //  .isString()
+    //  .isLength({ min: 3 });
     req.checkBody('challengeType', 'challengeType must be an integer')
       .isNumber();
+    console.log("OJO Pasaron 1, req=", req);
 
     const type = accepts(req).type('html', 'json', 'text');
+    console.log("OJO Pasaron 2");
 
     const errors = req.validationErrors(true);
+    console.log("OJO Pasaron 3, errors=", errors);
 
     if (errors) {
       if (type === 'json') {
@@ -558,6 +561,7 @@ module.exports = function(app) {
     return req.user.getChallengeMap$()
       .flatMap(() => {
         const completedDate = Date.now();
+    	console.log("OJO Pasaron 2 completedDate=", completedDate);
         const {
           id,
           name,
