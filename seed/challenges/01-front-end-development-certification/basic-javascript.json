@@ -2641,7 +2641,7 @@
       "challengeType": 1,
       "titleEs": "Usa lógica condicional con instrucciones if y else",
       "descriptionEs": [
-        "Las instrucciones <code>if</code> se usan para hacer decisiones en el código (\"if\" es \"si\" en español). La palabra reservada <code>if</code> le dice a JavaScript que ejecute el código que está en el bloque entre llaves sólo bajo ciertas condiciones, definidas entre paréntesis. Estas condiciones se conocen como condiciones <em>Booleanas</code> porque sólo pueden evaluarse a verdadero (<code>true</code>) o falso (<code>false</code>).",
+        "Las instrucciones <code>if</code> se usan para hacer decisiones en el código (\"if\" es \"si\" en español). La palabra reservada <code>if</code> le dice a JavaScript que ejecute el código que está en el bloque entre llaves sólo bajo ciertas condiciones, definidas entre paréntesis. Estas condiciones se conocen como condiciones <em>Booleanas</em> porque sólo pueden evaluarse a verdadero (<code>true</code>) o falso (<code>false</code>).",
 	"Cuando la condición evalua a <code>true</code>, el programa ejecuta las instrucciones del bloque entre llaves.  Cuando la condición booleana evalua a <code>false</code>, no se ejecutará el bloque de instrucciones que están entre llaves.",
         "<strong>Seudocódigo</strong>",
         "<blockquote>if (<i>condición es verdadera</i>) {<br>  <i>instrucciones que se ejecutan</i><br>}</blockquote>",
@@ -2649,7 +2649,7 @@
         "<blockquote>function prueba(miCondicion) {<br>  if (miCondicion) {<br>     return \"Era verdadera\";<br>  }<br>  return \"Era falsa\";<br>}<br>prueba(true);  // retorna \"Era verdadera\"<br>prueba(false); // retorna \"Era falsa\"</blockquote>",
         "Cuando <code>prueba</code> es llamada con un valor <code>true</code>, la instrucción <code>if</code> evalua <code>miCondicion</code> para determinar si es verdadera o no. Como es verdadera, la función retorna <code>\"Era verdadera\"</code>. Cuando llamamamos <code>test</code> con un valor <code>false</code>, <code>myCondicion</code>  <em>no</em> es <code>true</code> y la instrucción entre llaves no se ejecuta así que la función retorna <code>\"Era falsa\"</code>.",
         "<h4>Instrucciones</h4>",
-        "Cree una instrucción <code>if</code> dentro de la función que retorne <code>\"Yes, that was true\"</code> si el parámetro <code>wasThatTrue</code> es <code>true</code> y que retorne <code>\"No, that was false\"</code> en otro caso."
+        "Crea una instrucción <code>if</code> dentro de la función que retorne <code>\"Yes, that was true\"</code> si el parámetro <code>wasThatTrue</code> es <code>true</code> y que retorne <code>\"No, that was false\"</code> en otro caso."
       ]
     },
     {
